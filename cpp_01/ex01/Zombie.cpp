@@ -6,7 +6,7 @@
 /*   By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 09:25:03 by kimkwanho         #+#    #+#             */
-/*   Updated: 2021/08/15 11:14:52 by kimkwanho        ###   ########.fr       */
+/*   Updated: 2021/08/16 13:05:39 by kimkwanho        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ Zombie::Zombie(void)
 	std::cout	<< ANSI_YEL << "<" << "NO_NAME" << "> "
 				<< ANSI_RES << "is Born!" << std::endl;
 }
+
 
 Zombie::Zombie(std::string _nam)
 {
