@@ -6,13 +6,13 @@
 #    By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/16 18:17:59 by kimkwanho         #+#    #+#              #
-#    Updated: 2021/08/16 19:18:13 by kimkwanho        ###   ########.fr        #
+#    Updated: 2021/08/17 11:45:24 by kimkwanho        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS	=	main.cpp \
-			Fixed.cpp
-NAME	=	Fixed
+			ClapTrap.cpp
+NAME	=	ClapTrap
 
 CC		=	clang++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
