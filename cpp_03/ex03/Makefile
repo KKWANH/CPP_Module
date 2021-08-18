@@ -6,15 +6,16 @@
 #    By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/16 18:17:59 by kimkwanho         #+#    #+#              #
-#    Updated: 2021/08/17 23:46:09 by kimkwanho        ###   ########.fr        #
+#    Updated: 2021/08/18 19:16:33 by kimkwanho        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS	=	main.cpp \
 			ClapTrap.cpp \
 			ScavTrap.cpp \
-			FragTrap.cpp
-NAME	=	FragTrap
+			FragTrap.cpp \
+			DiamondTrap.cpp
+NAME	=	DiamondTrap
 
 CC		=	clang++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98

@@ -6,20 +6,20 @@
 /*   By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 12:20:27 by kimkwanho         #+#    #+#             */
-/*   Updated: 2021/08/17 23:42:43 by kimkwanho        ###   ########.fr       */
+/*   Updated: 2021/08/18 19:15:50 by kimkwanho        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include		"FragTrap.hpp"
+# include		"DiamondTrap.hpp"
 
 int				main(void)
 {
-	FragTrap	frag("fragtrap");
+	DiamondTrap _dmt("diamond");
 
-	frag.highFivesGuys();
-	frag.attack("bkwag");
-	frag.beRepaired(10);
-	frag.takeDamage(10);
-	
+	_dmt.highFivesGuys();
+	_dmt.attack("kkim");
+	_dmt.beRepaired(10);
+	_dmt.takeDamage(10);
+	_dmt.whoAmI();
 	return 0;
 }

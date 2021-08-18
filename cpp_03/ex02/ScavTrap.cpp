@@ -6,7 +6,7 @@
 /*   By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 12:04:39 by kimkwanho         #+#    #+#             */
-/*   Updated: 2021/08/17 12:09:39 by kimkwanho        ###   ########.fr       */
+/*   Updated: 2021/08/18 19:02:14 by kimkwanho        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ ScavTrap::ScavTrap()
 }
 
 ScavTrap::ScavTrap(std::string _nam)
-:ClapTrap(_nam)
+:	ClapTrap(_nam)
 {
 	this->HitPoint		= 10;
 	this->EnergyPoint	= 10;

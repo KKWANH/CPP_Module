@@ -6,7 +6,7 @@
 /*   By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 12:04:39 by kimkwanho         #+#    #+#             */
-/*   Updated: 2021/08/17 12:09:39 by kimkwanho        ###   ########.fr       */
+/*   Updated: 2021/08/18 19:08:17 by kimkwanho        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ ScavTrap::ScavTrap()
 }
 
 ScavTrap::ScavTrap(std::string _nam)
-:ClapTrap(_nam)
+:	ClapTrap(_nam)
 {
 	this->HitPoint		= 10;
 	this->EnergyPoint	= 10;
@@ -66,4 +66,15 @@ void					ScavTrap::GuardGate(void)
 						<< ANSI_RES << "Changes mode to "
 						<< ANSI_YEL << "[GuardGate]"
 						<< ANSI_RES << std::endl;
+}
+
+void					ScavTrap::attack(const std::string& _tgt)
+{
+	std::cout			<< ANSI_GRE << "[ScavTrap] "
+						<< ANSI_YEL	<< "[" << this->name << "]"
+						<< ANSI_RES << " attacks "
+						<< ANSI_YEL	<< "[" << _tgt << "]"
+						<< ANSI_RES << ", causing "
+						<< ANSI_RED << "{" << this->AttackDamage << "}"
+						<< ANSI_RES << " points!" << std::endl;
 }
