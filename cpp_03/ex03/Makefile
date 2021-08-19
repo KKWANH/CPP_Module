@@ -6,7 +6,7 @@
 #    By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/16 18:17:59 by kimkwanho         #+#    #+#              #
-#    Updated: 2021/08/18 19:16:33 by kimkwanho        ###   ########.fr        #
+#    Updated: 2021/08/19 14:50:38 by kimkwanho        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS	=	main.cpp \
 NAME	=	DiamondTrap
 
 CC		=	clang++
-FLAGS	=	-Wall -Wextra -Werror -std=c++98
+FLAGS	=	-Wall -Wextra -Werror -std=c++98 -Wshadow -Wno-shadow
 
 OBJS	=	$(SRCS:.cpp=.o)
 
