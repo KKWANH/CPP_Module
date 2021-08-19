@@ -39,6 +39,7 @@
 <img width="200" alt="100" src="https://user-images.githubusercontent.com/35485904/129510315-08af2253-a9eb-4d9a-b9a5-a721dec43e92.png">
 
 #### finished date: `Aug 18`
+#### complete date: `Aug 19`
 
 <hr>
 
