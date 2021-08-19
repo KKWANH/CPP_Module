@@ -25,7 +25,7 @@
 
 # CPP_02 🍷 (80/100)
 
-<img width="200" alt="subscribed" src="https://user-images.githubusercontent.com/35485904/129480199-357c8fc7-a444-408e-a502-436e24c1b41a.png">
+<img width="200" alt="80" src="https://user-images.githubusercontent.com/35485904/130015481-6d93dc1c-6d02-488e-aca6-60605f69443c.png">
 
 #### minus point: `ex03 BSP doesn't exist` *(20 point)*
 
@@ -36,7 +36,7 @@
 
 # CPP_03 😎 (Not yet/100)
 
-<img width="200" alt="forbidden" src="https://user-images.githubusercontent.com/35485904/129566234-0cd1e0dd-0f4e-4823-a4e5-ce0f8cad8d61.png">
+<img width="200" alt="subscribed" src="https://user-images.githubusercontent.com/35485904/129480199-357c8fc7-a444-408e-a502-436e24c1b41a.png">
 
 #### finished date: `Aug 18`
 
@@ -48,3 +48,4 @@
 
 #### finished date: `in progress`
 
+<hr>
