@@ -23,12 +23,14 @@
 
 <hr>
 
-# CPP_02 😎 (Not yet/100)
+# CPP_02 🍷 (80/100)
 
 <img width="200" alt="subscribed" src="https://user-images.githubusercontent.com/35485904/129480199-357c8fc7-a444-408e-a502-436e24c1b41a.png">
 
+#### minus point: `ex03 BSP doesn't exist` *(20 point)*
+
 #### finished date: `Aug 16`
-#### complete date: `.`
+#### complete date: `Aug 18`
 
 <hr>
 
