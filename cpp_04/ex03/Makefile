@@ -6,17 +6,17 @@
 #    By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/16 18:17:59 by kimkwanho         #+#    #+#              #
-#    Updated: 2021/08/25 22:12:51 by kimkwanho        ###   ########.fr        #
+#    Updated: 2021/08/29 07:39:01 by kimkwanho        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS	=	main.cpp \
-			Animal.cpp \
-			Cat.cpp \
-			Dog.cpp \
-			WrongAnimal.cpp \
-			WrongCat.cpp
-NAME	=	Animals
+			AMateria.cpp \
+			Character.cpp \
+			Cure.cpp \
+			Ice.cpp \
+			MateriaSource.cpp
+NAME	=	Interface
 
 CC		=	clang++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
