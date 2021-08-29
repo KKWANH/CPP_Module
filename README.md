@@ -38,16 +38,19 @@
 
 <img width="200" alt="100" src="https://user-images.githubusercontent.com/35485904/129510315-08af2253-a9eb-4d9a-b9a5-a721dec43e92.png">
 
+#### minus point: `NONE_EXIST` *(0 point)*
+
 #### finished date: `Aug 18`
 #### complete date: `Aug 19`
 
 <hr>
 
-# CPP_04 🗿 (Not yet/100)
+# CPP_04 😎 (Not yet/100)
 
 <img width="200" alt="subscribed" src="https://user-images.githubusercontent.com/35485904/129480199-357c8fc7-a444-408e-a502-436e24c1b41a.png">
 
-#### finished date: `in progress`
+#### finished date: `Aug 29` *I was busy for some weeks...*
+#### complete date: `Aug 29`
 
 <hr>
 
