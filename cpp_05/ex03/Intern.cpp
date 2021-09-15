@@ -6,49 +6,82 @@
 /*   By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 06:18:30 by kimkwanho         #+#    #+#             */
-/*   Updated: 2021/09/14 17:23:16 by kimkwanho        ###   ########.fr       */
+/*   Updated: 2021/09/15 16:45:54 by kimkwanho        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include					"Intern.hpp"
 
-const Intern::formType_		_lst[] = 
+const Intern::formType_		Intern::_lst[] = 
 {
-	{"Shrubbery Creation",	&Intern::makeShrubberyCreationForm_},
-	{"Presidential Pardon", &Intern::makePresidentialPardonForm_},
-	{"Robotomy Request",	&Intern::makeRobotomyRequestForm_},
+	{"shrubbery creation",	&Intern::makeShrubberyCreationForm_},
+	{"presidential pardon", &Intern::makePresidentialPardonForm_},
+	{"robotomy request",	&Intern::makeRobotomyRequestForm_},
 };
 
 Intern::Intern(void)
-:	_nam(""),
-	_grd(1)
 {
-	std::cout				<< ANSI_GRE << "[Bureaucrat] "
+	std::cout				<< ANSI_GRE << "[Intern] "
 							<< ANSI_RES << "Default constructor."
 							<< ANSI_RES << std::endl;
 }
 
-Bureaucrat::Bureaucrat(std::string _nam, int _grd)
-:	_nam(_nam)
+Intern::Intern(const Intern& _cpy)
 {
-	if (_grd < 1 || _grd > 150)
+	std::cout				<< ANSI_GRE << "[Intern] "
+							<< ANSI_RES << "Copy constructor. (empty)"
+							<< ANSI_RES << std::endl;
+	(void)_cpy;
+}
+
+Intern::~Intern(void)
+{
+	std::cout				<< ANSI_GRE << "[Intern] "
+							<< ANSI_RES << "Default destructor."
+							<< ANSI_RES << std::endl;
+}
+
+Intern&						Intern::operator=(const Intern& _cpy)
+{
+	std::cout				<< ANSI_GRE << "[Intern] "
+							<< ANSI_RES << "= Assignment."
+							<< ANSI_RES << std::endl;
+	(void)_cpy;
+	return					*this;
+}
+
+Form*						Intern::makePresidentialPardonForm_(const std::string& _tgt)
+{
+	return					new PresidentialPardonForm(_tgt);
+}
+
+Form*						Intern::makeRobotomyRequestForm_(const std::string& _tgt)
+{
+	return					new RobotomyRequestForm(_tgt);
+}
+
+Form*						Intern::makeShrubberyCreationForm_(const std::string& _tgt)
+{
+	return					new ShrubberyCreationForm(_tgt);
+}
+
+Form*						Intern::makeForm(std::string _nam, std::string _tgt)
+{
+	for (int _idx = 0; _idx < 3; _idx++)
 	{
-		std::cout			<< ANSI_GRE << "[Bureaucrat] "
-							<< ANSI_RES << "Parameter constructor..., "
-							<< ANSI_RED << "[ERROR] "
-							<< ANSI_RES << "Your parameter grade's range is something weird..! 1 ~ 150 is possible."
+		if (_nam == Intern::_lst[_idx]._nam)
+		{
+			std::cout		<< ANSI_GRE << "[Intern] "
+							<< ANSI_RES << "created form: "
+							<< ANSI_YEL << "[" << _lst[_idx]._nam << "]"
 							<< ANSI_RES << std::endl;
-		if (_grd < 1)
-			throw			Bureaucrat::GradeTooHighException();
-		if (_grd > 150)
-			throw			Bureaucrat::GradeTooLowException();
+			return			(this->*(_lst[_idx]._fnc))(_tgt);
+		}
 	}
-	std::cout				<< ANSI_GRE << "[Bureaucrat] "
-							<< ANSI_RES << "Parameter constructor, "
-							<< ANSI_YEL << "[Name][" << _nam << "] "
-							<< ANSI_RES << "and "
-							<< ANSI_YEL << "[Grade][" << _grd << "]"
-							<< ANSI_RES << "."
+	std::cout				<< ANSI_GRE << "[Intern] "
+							<< ANSI_RED << "[ERROR] "
+							<< ANSI_RES << "cannot create form: "
+							<< ANSI_YEL  << "[" << _nam << "]"
 							<< ANSI_RES << std::endl;
-	this->_grd				= _grd;
+	return					(NULL);
 }

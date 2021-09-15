@@ -6,7 +6,7 @@
 /*   By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 16:55:12 by kimkwanho         #+#    #+#             */
-/*   Updated: 2021/09/09 06:09:29 by kimkwanho        ###   ########.fr       */
+/*   Updated: 2021/09/15 15:55:28 by kimkwanho        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -209,6 +209,7 @@ std::ostream&				operator<<(std::ostream& _out, const Bureaucrat& _obj)
 	_out					<< ANSI_CYA << "[" << _obj.getName() << "]"
 							<< ANSI_RES << " the bureaucrat's grade is : "
 							<< ANSI_CYA << "[" << _obj.getGrade() << "]"
-							<< ANSI_RES << ".";
+							<< ANSI_RES << "."
+							<< std::endl;
 	return					_out;
 }

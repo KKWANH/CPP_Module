@@ -6,19 +6,19 @@
 #    By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/16 18:17:59 by kimkwanho         #+#    #+#              #
-#    Updated: 2021/09/09 05:26:03 by kimkwanho        ###   ########.fr        #
+#    Updated: 2021/09/15 16:47:04 by kimkwanho        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS	=	Bureaucrat.cpp \
 			Form.cpp \
+			Intern.cpp \
 			PresidentialPardonForm.cpp \
 			RobotomyRequestForm.cpp \
 			ShrubberyCreationForm.cpp \
 			main.cpp
 
-TREE	=	test1_shrubbery \
-			test3333_shrubbery
+TREE	=	Bender_shrubbery
 
 NAME	=	Bureaucrat
 

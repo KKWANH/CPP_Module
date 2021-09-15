@@ -6,7 +6,7 @@
 /*   By: kimkwanho <kimkwanho@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 16:55:27 by kimkwanho         #+#    #+#             */
-/*   Updated: 2021/09/09 05:15:32 by kimkwanho        ###   ########.fr       */
+/*   Updated: 2021/09/15 16:46:28 by kimkwanho        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(void)
 }
 
 ShrubberyCreationForm::ShrubberyCreationForm(std::string _tgt)
-:	Form("ShrubberyCreationForm", 72, 45),
+:	Form("ShrubberyCreationForm", 145, 137),
 	_tgt(_tgt)
 {
 	std::cout				<< ANSI_GRE << "[ShrubberyCreationForm] "
