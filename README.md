@@ -75,11 +75,12 @@
 
 <hr>
 
-# CPP_07 🗿 (Not yet/100)
+# CPP_07 😎 (Not yet/100)
 
 <img width="200" alt="subscribed" src="https://user-images.githubusercontent.com/35485904/129480199-357c8fc7-a444-408e-a502-436e24c1b41a.png">
 
-#### finished date: `in progress`
+#### finished date: `Sep 22`
+#### complete date: `in progress`
 
 <hr>
 
